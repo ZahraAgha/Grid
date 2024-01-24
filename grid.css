@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 80px 1fr 80px;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  background-color: darkslateblue;
+  color: #fff;
+  padding: 15px;
+  border: 2px solid sandybrown;
+}
+
+header {
+  grid-column: 1 / span 3;
+}
+
+footer {
+  grid-column: 1 / span 3;
+}
